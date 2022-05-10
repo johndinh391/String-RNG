@@ -10,10 +10,10 @@ def main():
     second_input_int = int(second_input)
     if(first_input_int > second_input_int or first_input_int < 0 or second_input_int < 0):
         print("Incorrect pairing.")
-    a = str.ascii_letters
-    d = ""
-    f = rng.randint(first_input_int,second_input_int)
-    for i in range(f):
-        d +=rng.choice(a)
-    print(d)
+    alphabetlist = str.ascii_letters
+    string_result = ""
+    int_between_range = rng.randint(first_input_int,second_input_int)
+    for i in range(int_between_range):
+        string_result += rng.choice(alphabetlist)
+    print(string_result)
 main()
